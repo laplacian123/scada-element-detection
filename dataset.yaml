@@ -1,0 +1,9 @@
+names:
+  0: ac
+  1: background
+  2: cb
+  3: mccb
+  4: tr
+path: ../datasets/dataset
+train: images
+val: images
