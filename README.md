@@ -1,3 +1,6 @@
+## Requirements
+Before you use this package, please make sure you have installed the requirements and completely followed the instructions of [the original repository of yolov5](https://github.com/ultralytics/yolov5).
+
 ## Usage
 ### Image Augmentation
 To train the object detection model for the single-line diagram, we must first prepare the training data for each element. Since there is only one image for each type of element, we have to apply some image augmentation such as blur, zoom or adding noise. Here we can complete this task with only one line of command, as long as the training images are saved in the `src_img` folder with their own label/class name as their file name: 
@@ -25,3 +28,6 @@ python train.py --img 1024 --batch 16 --epochs 500 --data ../dataset.yaml
 -weights yolov5n.pt --device 0 --freeze 12
 ```
 For a detailed information of what these arguments mean, please refer to [the original repository of yolov5](https://github.com/ultralytics/yolov5).
+
+## Inference
+To make inferences, please run `detection.ipynb`.
